@@ -1,0 +1,26 @@
+app-id: io.github.dprietob.queue
+runtime: org.gnome.Platform
+runtime-version: '50'
+sdk: org.gnome.Sdk
+command: queue
+
+finish-args:
+  - --share=ipc
+  - --socket=wayland
+  - --socket=fallback-x11
+  - --device=dri
+
+cleanup:
+  - /include
+  - /lib/pkgconfig
+  - '*.a'
+  - '*.la'
+
+modules:
+  - name: queue
+    buildsystem: meson
+    sources:
+      - type: git
+        url: https://github.com/dprietob/queue.git
+        tag: '1.0.0'
+        commit: 18f9bca83650150e672e8b7a058fbcc02a3d13d4
