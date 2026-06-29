@@ -22,5 +22,5 @@ modules:
     sources:
       - type: git
         url: https://github.com/dprietob/queue.git
-        tag: '1.0.1'
-        commit: eac03540eb9169f6eb930b63afb7dc72e8216999
+        tag: '1.1.0'
+        commit: 7acd006ab0ba9597ad4de1a6d1c96c99059396e7
