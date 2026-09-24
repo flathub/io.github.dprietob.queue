@@ -10,12 +10,6 @@ finish-args:
   - --socket=fallback-x11
   - --device=dri
 
-cleanup:
-  - /include
-  - /lib/pkgconfig
-  - '*.a'
-  - '*.la'
-
 modules:
   - name: queue
     buildsystem: meson
